@@ -40,14 +40,10 @@ def main():
     end = False
     while not end:
         if selected == "a" and result == 1:
-            print("Correct!")
-            returned = first
-            return returned
+            return "Correct!"
 
         elif selected == "b" and result == 2:
-            print("Correct!")
-            returned = second
-            return returned
+            return "Correct!"
 
         elif selected == "a" and result == 2:
             print("Wrong!")
@@ -56,8 +52,6 @@ def main():
         elif selected == "b" and result == 1:
             print("Wrong!")
             end = True
-
-        first = returned
 
         second = generate_data()
         compare()
