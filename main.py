@@ -7,3 +7,13 @@
 
 from art import *
 from game_data import data
+from random import randint
+
+print(logo)
+
+print(f"Comapre the follower count of the following people:")
+
+random_number = randint(0, len(data) - 1)
+
+print(data[random_number]['name'])
+print(data[random_number]['name'])
